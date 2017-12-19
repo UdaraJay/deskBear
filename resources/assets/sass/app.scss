@@ -1,0 +1,171 @@
+$primary-font:  Calibre, 'Work Sans', sans-serif;
+$secondary-font:  'Source Sans Pro', sans-serif;
+$primary-color: #2a2825;
+$secondary-color:#7754fb;
+$tertiary-color:#82817d;
+$warning-color:#fff7d4;
+
+body{
+  font-family: $secondary-font;
+  font-weight: 400;
+  color: $primary-color;
+  background: #f8fafc;
+}
+
+minSupport{
+  display: inline-flex;
+  font-weight: 600;
+  font-size: 1em;
+  line-height: 1;
+  font-family: $primary-font;
+}
+
+minSupport::before{
+  content: 'desk';
+  color: $secondary-color;
+  font-weight: 300;
+}
+
+minSupport::after{
+  content: 'Bear';
+  color: $primary-color;
+  margin: 0 0 0 0.05em;
+}
+
+// ANIMATIONS
+.smooth{
+  -webkit-transition: all 0.15s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+}
+
+// GENERAL
+button{
+  display: flex;
+  vertical-align: middle;
+  align-items: center;
+  padding:17px 22px;
+  font-weight: 400;
+  border:none;
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,0.1);
+  border-radius: 3px;
+  text-align: center;
+  background: $secondary-color;
+  color:#fff;
+  font-size: 0.9em;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+button:hover{
+  cursor: pointer;
+  box-shadow: inset 0 0 0 1px $tertiary-color;
+  background: $tertiary-color;
+  padding: 17px 18px 17px 22px;
+}
+
+button .icon{
+  font-size: 1.2em;
+  line-height: 1;
+  margin-left: 10px;
+}
+
+button:hover .icon{
+  margin-left: 14px;
+}
+
+#container{
+  display: flex;
+  vertical-align: middle;
+  align-items: center;
+  width: 100%;
+  min-height: 100%;
+  justify-content: center;
+}
+
+#install{
+  display: block;
+  align-self: center;
+  min-width: 500px;
+  max-width: 500px;
+  margin-bottom: 34px;
+  margin-top: -10px;
+  padding:40px;
+  border:1px solid #e2e2e2;
+  box-shadow:0 2px 0 0 rgba(0, 0, 0, 0.05);
+  border-radius: 3px;
+  background: #fff;
+}
+
+#install .header{
+  margin-bottom: 25px;
+}
+
+#install .header minSupport{
+  font-size: 2em;
+}
+
+#install .header .tag{
+  display: block;
+  color: $tertiary-color;
+  font-size: 1.1em;
+  line-height: 1.45;
+  margin-top:10px;
+}
+
+#install .howto{
+  display: block;
+  align-self: center;
+  width: 100%;
+  line-height: 1.5;
+  margin-bottom: 25px;
+}
+
+#install .howto ul{
+  display: block;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#install .howto ul li{
+  margin-bottom:10px;
+  padding:17px 16px 16px 16px;
+  border-radius: 3px;
+  background: $warning-color;
+  color:rgba(0, 0, 0, 0.6);
+  margin-top: 12px;
+  font-size: 0.9em;
+}
+
+#install .button-bar{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  vertical-align: middle;
+  align-items: center;
+  color: $tertiary-color;
+}
+
+#footer{
+  text-align: center;
+  color: $tertiary-color;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  font-family: $primary-font;
+}
+
+#footer a{
+  text-decoration: none;
+  color: $secondary-color;
+}
+
+#footer a:hover{
+  color: $primary-color;
+}
+
+#footer dot::before{
+  content: "•";
+  margin: 0 10px;
+  color:#ddd;
+}
