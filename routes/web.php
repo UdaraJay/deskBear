@@ -10,11 +10,6 @@
 | and give it the Closure to call when that URI is requested.
 |
 */
+use Illuminate\Http\Request;
 
-$router->get('/', function () use ($router) {
-  if(config('app.installed') == false){
-    return view('install.index');
-  } else {
-    return $router->app->version();
-  }
-});
+$router->get('/', 'HomeController@index');

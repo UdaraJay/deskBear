@@ -9,8 +9,8 @@
   <div>
     <div id="install">
       <div class="header">
-        <minSupport></minSupport>
-        <div class="tag">This setup will guide you through installing minSupport on your own server.</div>
+        <deskBear></deskBear>
+        <div class="tag">This setup will guide you through installing deskBear on your own server.</div>
       </div>
       <div class="howto">
         <ul>
